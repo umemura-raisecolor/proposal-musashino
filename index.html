@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>昭研工業株式会社｜武蔵野市・小平市の外壁塗装・屋根塗装・防水工事</title>
+<meta name="description" content="昭和49年創業。東京都武蔵野市・小平市の外壁塗装、屋根塗装、雨漏り修理、防水工事、マンション大規模修繕なら昭研工業株式会社へ。訪問お見積りにも対応しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700;900&family=Oswald:wght@500;600&display=swap">
+<style>
+/* レイアウト:黒と白のコントラストで締め、オレンジは「行動してほしい所」と要所だけ。角は立てて、文字は大きく。 */
+:root{
+  --white:#ffffff;
+  --paper:#f3f2ef;      /* 淡いグレーの帯 */
+  --black:#111111;      /* 主役の黒 */
+  --char:#1c1c1c;       /* 黒の中の段差 */
+  --ink:#161616;        /* 本文 */
+  --muted:#5c5c5c;
+  --orange:#e8590c;     /* 差し色 */
+  --red:#c32a1e;        /* ここ一番の強調 */
+  --line:#d9d8d4;
+  --line-dark:#3a3a3a;
+  --display:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","BIZ UDPGothic",sans-serif;
+  --body:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --num:"Oswald","Zen Kaku Gothic New",sans-serif;
+  --w:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.9;letter-spacing:.02em}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--orange)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:var(--w);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:900;line-height:1.4;text-wrap:balance;word-break:auto-phrase;margin:0;letter-spacing:.04em}
+.pull{word-break:auto-phrase}
+p{margin:0}
+
+/* ヘッダー */
+.top-note{background:var(--black);color:#bdbdbd;font-size:14px;border-bottom:1px solid var(--line-dark)}
+.top-note .wrap{padding-block:6px}
+header.site{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand img{width:50px;height:auto}
+.brand b{font-family:var(--display);font-size:23px;font-weight:900;letter-spacing:.1em;display:block;line-height:1.2;white-space:nowrap}
+.brand small{display:block;font-family:var(--num);font-size:13px;color:var(--muted);letter-spacing:.3em;line-height:1.5}
+nav.gnav{display:flex;gap:28px;font-size:16px;white-space:nowrap}
+nav.gnav a{color:var(--ink);text-decoration:none;font-weight:700;padding-block:4px;border-bottom:2px solid transparent}
+nav.gnav a:hover{border-bottom-color:var(--orange)}
+.tel-btn{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;color:var(--ink);line-height:1.15}
+.tel-btn span{font-size:13px;color:var(--orange);font-weight:700}
+.tel-btn strong{font-family:var(--num);font-size:30px;font-weight:600;color:var(--black);letter-spacing:.04em;white-space:nowrap}
+@media (max-width:1180px){nav.gnav{display:none}}
+@media (max-width:620px){
+  .brand b{font-size:17px;letter-spacing:.04em}.brand small{display:none}.brand img{width:40px}
+  .tel-btn span{display:none}.tel-btn strong{font-size:22px}
+}
+
+/* ヒーロー:黒 */
+.hero{position:relative;overflow:hidden;background:var(--black);color:var(--white)}
+.hero::before{content:"";position:absolute;inset:0;background:url("https://shouken-kougyou.com/img/media/image/dummy.jpg") center 70%/cover no-repeat;opacity:.16;filter:grayscale(1)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-block:80px 88px}
+.hero .since{display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:17px;color:var(--orange);letter-spacing:.12em;margin-bottom:26px}
+.hero .since::before{content:"";width:40px;height:2px;background:var(--orange)}
+.hero h1{font-size:clamp(34px,4.8vw,58px);color:var(--white);letter-spacing:.06em;line-height:1.35}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lead{margin-top:26px;font-size:19px;max-width:30em;color:#d6d6d6}
+.hero .acts{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:62px;padding:0 32px;border-radius:0;font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.06em;text-decoration:none;border:0;cursor:pointer;transition:background .2s,color .2s}
+.btn-sun{background:var(--orange);color:#fff}
+.btn-sun:hover{background:var(--red)}
+.btn-line{background:transparent;color:var(--white);border:1px solid #8a8a8a}
+.btn-line:hover{border-color:var(--white)}
+.hero figure{margin:0;position:relative}
+.hero figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero figure img{box-shadow:14px 14px 0 0 var(--orange)}
+.hero figcaption{margin-top:26px;font-size:15px;line-height:1.6;color:#bdbdbd}
+.hero figcaption b{color:var(--white);font-family:var(--display);margin-right:.6em}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding-block:48px 64px}
+  .hero figure img{box-shadow:8px 8px 0 0 var(--orange)}
+}
+
+/* 数字の帯 */
+.facts{background:var(--char);color:#fff;border-top:1px solid var(--line-dark)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:30px}
+.fact{text-align:center;padding:6px 10px;border-left:1px solid var(--line-dark)}
+.fact:first-child{border-left:0}
+.fact b{display:block;font-family:var(--num);font-weight:600;font-size:clamp(34px,4vw,48px);line-height:1.2;color:var(--orange);font-variant-numeric:tabular-nums}
+.fact b small{font-family:var(--display);font-size:.4em;margin-left:4px;color:#fff;font-weight:700}
+.fact span{font-size:15px;color:#bdbdbd}
+@media (max-width:720px){.facts .wrap{grid-template-columns:repeat(2,1fr);row-gap:20px}.fact:nth-child(3){border-left:0}}
+
+/* セクション共通 */
+section{padding-block:104px}
+.sec-head{margin-bottom:48px;max-width:42em}
+.sec-head .eyebrow{font-family:var(--display);font-weight:700;color:var(--orange);font-size:16px;letter-spacing:.2em;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.sec-head .eyebrow::before{content:"";width:32px;height:2px;background:var(--orange)}
+.sec-head h2{font-size:clamp(26px,3.6vw,42px)}
+.sec-head p{margin-top:18px;color:var(--muted)}
+.band{background:var(--paper)}
+.dark{background:var(--black);color:#fff}
+.dark .sec-head p{color:#bdbdbd}
+@media (max-width:620px){section{padding-block:68px}}
+
+/* ごあいさつ */
+.greet{display:grid;grid-template-columns:320px 1fr;gap:64px;align-items:start}
+.greet .photo img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--paper)}
+.greet .name{margin-top:18px;line-height:1.6;border-left:3px solid var(--orange);padding-left:14px}
+.greet .name small{display:block;color:var(--muted);font-size:15px}
+.greet .name b{font-family:var(--display);font-weight:900;font-size:28px;letter-spacing:.16em}
+.greet .msg{display:flex;flex-direction:column;gap:22px;font-size:19px;max-width:36em;min-width:0}
+.greet .msg .pull{font-family:var(--display);font-weight:900;font-size:clamp(22px,2.6vw,30px);color:var(--black);line-height:1.6}
+.history{margin-top:10px;border-top:2px solid var(--black)}
+.history div{display:grid;grid-template-columns:7.5em 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+.history dt{font-family:var(--display);font-weight:900;color:var(--red)}
+.history dd{margin:0}
+@media (max-width:820px){.greet{grid-template-columns:1fr;gap:32px}.greet .photo{max-width:280px}}
+
+/* 大切にしていること */
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--black)}
+.value{padding:36px 32px 36px 0;display:flex;flex-direction:column;gap:14px;border-right:1px solid var(--line)}
+.value + .value{padding-left:32px}
+.value:last-child{border-right:0}
+.value .mark{width:52px;height:52px;background:var(--black);display:grid;place-items:center;color:var(--orange)}
+.value h3{font-size:24px}
+.value p{font-size:17px;color:var(--muted)}
+@media (max-width:860px){.values{grid-template-columns:1fr}.value,.value + .value{padding:28px 0;border-right:0;border-bottom:1px solid var(--line)}}
+
+/* 職人さん(黒) */
+.crew{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.crew .text{display:flex;flex-direction:column;gap:18px;font-size:18px;min-width:0;color:#d6d6d6}
+.crew .text h2{color:#fff}
+.crew .text strong{color:var(--orange)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery figure{margin:0}
+.gallery figcaption{font-size:14px;color:#a8a8a8;margin-top:6px;line-height:1.5}
+.gallery .wide{grid-column:span 2}
+.gallery .wide img{aspect-ratio:16/9}
+@media (max-width:860px){.crew{grid-template-columns:1fr;gap:36px}}
+
+/* できること */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--black)}
+.svc{padding:28px 24px 28px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.svc h3{font-size:22px;display:flex;align-items:center;gap:12px}
+.svc h3::before{content:"";width:12px;height:12px;background:var(--orange);flex:none}
+.svc p{font-size:16px;color:var(--muted);line-height:1.75}
+@media (max-width:860px){.services{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.services{grid-template-columns:1fr}}
+
+/* 施工事例 */
+.works{display:flex;flex-direction:column;gap:56px}
+.work{display:grid;grid-template-columns:1fr 1fr 300px;gap:12px;align-items:start;padding-bottom:56px;border-bottom:1px solid var(--line)}
+.work:last-child{padding-bottom:0;border-bottom:0}
+.work figure{margin:0;position:relative}
+.work figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.work figure span{position:absolute;top:0;left:0;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.1em;padding:4px 16px;background:var(--black);color:#fff}
+.work figure.after span{background:var(--orange)}
+.work .info{padding-left:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.work .info .tag{align-self:flex-start;font-size:14px;font-weight:700;color:var(--red);border:1px solid var(--red);padding:0 10px}
+.work .info h3{font-size:22px}
+.work dl{margin:0;font-size:16px;display:grid;grid-template-columns:5em 1fr;row-gap:4px}
+.work dt{color:var(--muted)}
+.work dd{margin:0}
+.more-cats{margin-top:56px;padding:32px;background:var(--paper)}
+.more-cats h3{font-size:20px;margin-bottom:16px}
+.more-cats ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.more-cats li{border:1px solid #bdbdbd;background:var(--white);padding:6px 16px;font-size:16px}
+@media (max-width:900px){.work{grid-template-columns:1fr 1fr}.work .info{grid-column:span 2;padding-left:0;padding-top:8px}}
+
+
+/* 施工事例:タブとカード */
+.wtabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:2px solid var(--black);margin-bottom:36px}
+.wtab{font:inherit;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:.04em;background:transparent;color:var(--ink);border:0;padding:14px 20px;cursor:pointer;display:flex;align-items:center;gap:8px;border-bottom:4px solid transparent;margin-bottom:-2px}
+.wtab span{font-family:var(--num);font-weight:500;font-size:15px;color:var(--muted)}
+.wtab[aria-selected="true"]{background:var(--black);color:#fff;border-bottom-color:var(--orange)}
+.wtab[aria-selected="true"] span{color:var(--orange)}
+.wtab:hover{border-bottom-color:var(--orange)}
+.wgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:48px 40px}
+.wcard{display:flex;flex-direction:column;gap:12px;min-width:0}
+.wcard .ba{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.wcard figure{margin:0;position:relative}
+.wcard img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--paper)}
+.wcard figure span{position:absolute;top:0;left:0;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.1em;padding:3px 12px;background:var(--black);color:#fff}
+.wcard figure.after span{background:var(--orange)}
+.wcard h3{font-size:21px;padding-top:6px;border-top:1px solid var(--line)}
+.wcard dl{margin:0;font-size:16px;display:grid;grid-template-columns:4.5em 1fr;row-gap:2px}
+.wcard dt{color:var(--muted)}
+.wcard dd{margin:0}
+@media (max-width:760px){.wgrid{grid-template-columns:1fr;gap:40px}.wtab{padding:10px 14px;font-size:15px}}
+.wcard[hidden]{display:none}
+
+/* 公共工事 */
+.public{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pub{background:var(--white);border-top:4px solid var(--black);padding:26px;display:flex;flex-direction:column;gap:6px}
+.pub small{color:var(--red);font-weight:700;font-size:14px;letter-spacing:.06em}
+.pub b{font-family:var(--display);font-weight:900;font-size:21px;line-height:1.5}
+.pub span{font-size:15px;color:var(--muted)}
+@media (max-width:860px){.public{grid-template-columns:1fr}}
+
+/* 資格 */
+.quals{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.qual{padding:18px;display:flex;flex-direction:column;gap:2px;background:var(--white)}
+.qual span{font-size:15px;line-height:1.5}
+.qual b{font-family:var(--num);font-weight:600;font-size:32px;color:var(--black);font-variant-numeric:tabular-nums;line-height:1.3}
+.qual b small{font-family:var(--display);font-size:15px;margin-left:3px}
+@media (max-width:860px){.quals{grid-template-columns:repeat(2,1fr)}}
+
+/* 流れ */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:step;border-top:2px solid var(--black)}
+.step{position:relative;padding:28px 24px 28px 0;display:flex;flex-direction:column;gap:10px;counter-increment:step}
+.step + .step{padding-left:24px;border-left:1px solid var(--line)}
+.step::before{content:counter(step,decimal-leading-zero);font-family:var(--num);font-weight:600;color:var(--orange);font-size:40px;line-height:1}
+.step h3{font-size:21px}
+.step p{font-size:16px;color:var(--muted)}
+@media (max-width:860px){.flow{grid-template-columns:1fr 1fr}.step:nth-child(3){padding-left:0;border-left:0}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}.step,.step + .step{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}}
+
+/* お知らせ */
+.news{list-style:none;margin:0;padding:0;border-top:2px solid var(--black)}
+.news li{display:grid;grid-template-columns:9em 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.news time{color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.news li{grid-template-columns:1fr;gap:2px}}
+
+/* 会社概要 */
+.company{display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:start}
+.co-table{margin:0;border-top:2px solid var(--black)}
+.co-table div{display:grid;grid-template-columns:8em 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.co-table dt{font-weight:700}
+.co-table dd{margin:0;min-width:0}
+.company .bldg img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.company .bldg a{display:inline-block;margin-top:14px;font-weight:700}
+@media (max-width:860px){.company{grid-template-columns:1fr}.company .bldg{max-width:380px}.co-table div{grid-template-columns:6em 1fr}}
+
+/* お問い合わせ(黒) */
+.contact{background:var(--black);color:#fff}
+.contact .sec-head p{color:#bdbdbd}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.tel-card{border:1px solid var(--line-dark);border-top:4px solid var(--orange);padding:32px;display:flex;flex-direction:column;gap:10px;background:var(--char)}
+.tel-card .num{font-family:var(--num);font-weight:600;font-size:clamp(40px,5vw,56px);color:#fff;letter-spacing:.04em;line-height:1.15;user-select:all}
+.tel-card .fax{font-size:17px;color:#bdbdbd}
+.tel-card .note{font-size:16px;border-top:1px solid var(--line-dark);padding-top:14px;margin-top:6px;color:#d6d6d6}
+form.f{background:var(--char);border:1px solid var(--line-dark);padding:32px;display:flex;flex-direction:column;gap:18px}
+form.f label{display:flex;flex-direction:column;gap:6px;font-weight:700}
+form.f label small{font-weight:400;color:#bdbdbd}
+form.f input,form.f textarea{font:inherit;font-size:18px;padding:14px 16px;border-radius:0;border:1px solid #444;background:#fff;color:var(--ink);width:100%}
+form.f textarea{min-height:140px;resize:vertical}
+.req{display:inline-block;background:var(--red);color:#fff;font-size:12px;padding:0 6px;margin-left:8px;vertical-align:2px}
+.f-done{background:#fff;color:var(--ink);padding:14px 16px;font-size:16px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+footer{background:#0a0a0a;color:#9a9a9a;font-size:15px;border-top:1px solid var(--line-dark)}
+footer .wrap{padding-block:36px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer b{color:#fff;font-family:var(--display);font-size:18px;letter-spacing:.1em}
+
+/* スマホ下部の電話ボタン */
+.fixed-tel{display:none}
+@media (max-width:620px){
+  .fixed-tel{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:0;background:var(--black);
+    padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+  .fixed-tel a{flex:1;min-height:60px;font-size:16px;padding:0 10px;white-space:nowrap}
+  .fixed-tel .btn-line{border:0;border-right:1px solid var(--line-dark)}
+  body{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-note"><div class="wrap">東京都武蔵野市・小平市の外壁塗装、屋根塗装、雨漏り修理、防水工事</div></div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="昭研工業株式会社 トップへ">
+      <img src="https://shouken-kougyou.com/files/libs/217/202305111043425552.jpg" alt="">
+      <span><b>昭研工業株式会社</b><small>SHOKEN KOGYO</small></span>
+    </a>
+    <nav class="gnav" aria-label="メインメニュー">
+      <a href="#greeting">ごあいさつ</a>
+      <a href="#crew">職人さんたち</a>
+      <a href="#services">工事の内容</a>
+      <a href="#works">施工事例</a>
+      <a href="#company">会社案内</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+    <a class="tel-btn" href="tel:0422325821"><span>お気軽にお電話ください</span><strong>0422-32-5821</strong></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="since">昭和49年創業｜武蔵野市</span>
+      <h1>この街の建物を、<br><em>親切で丁寧に</em><br>守りつづけて半世紀。</h1>
+      <p class="lead">外壁・屋根の塗り替えから、雨漏り修理、防水工事、マンションの大規模修繕まで。武蔵野市と小平市を中心に、一つひとつの仕事を責任をもって仕上げてきました。まずはお気軽にご相談ください。訪問してのお見積りにも伺います。</p>
+      <div class="acts">
+        <a class="btn btn-sun" href="#contact">無料でお見積りを相談する</a>
+        <a class="btn btn-line" href="#works">施工事例を見る</a>
+      </div>
+    </div>
+    <figure>
+      <img src="https://shouken-kougyou.com/files/libs/191/20230428100310480.jpg" alt="代表の金子と、褒章を受けた職人の東樹さん">
+      <figcaption><b>第35回 褒章式</b>表彰した職人さんと、代表の金子(左)</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- 数字の帯 -->
+<div class="facts" aria-label="昭研工業の数字">
+  <div class="wrap">
+    <div class="fact"><b>1974<small>年</small></b><span>設立(昭和49年)</span></div>
+    <div class="fact"><b>53<small>名</small></b><span>社員・スタッフ</span></div>
+    <div class="fact"><b>3<small>拠点</small></b><span>武蔵野市・小平市</span></div>
+    <div class="fact"><b>35<small>回</small></b><span>職人さんの褒章式</span></div>
+  </div>
+</div>
+
+<!-- ごあいさつ -->
+<section id="greeting">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">ごあいさつ</p>
+      <h2>お客様の大切な財産に、<br>手を入れさせていただく仕事です。</h2>
+    </div>
+    <div class="greet">
+      <div class="photo">
+        <img src="https://shouken-kougyou.com/files/libs/38/202110010852509142.jpg" alt="代表取締役 金子由徳">
+        <p class="name"><small>代表取締役</small><b>金子 由徳</b></p>
+      </div>
+      <div class="msg">
+        <p class="pull">「誠意と技術」を合言葉に、<br>最初から最後まで、私たちが責任をもって仕上げます。</p>
+        <p>昭研工業は、昭和49年8月に吹付工事の会社として始まりました。そこから塗装工事、防水工事へと仕事の幅を広げ、建物の外まわりをまるごとお任せいただける会社になりました。</p>
+        <p>私たちの誇りは、これまで積み重ねてきた一つひとつの仕事そのものです。おかげさまで、一度お任せくださったお客様からのリピートやご紹介を多くいただいています。</p>
+        <p>民間の住まいやマンションでも、官公庁の建物でも、社員一同「お客様の財産に携わっている」という自覚をもって、親切で丁寧な仕事をお届けしてまいります。</p>
+        <dl class="history" aria-label="あゆみ">
+          <div><dt>昭和49年</dt><dd>設立。建築総合吹付工事を専業にスタート</dd></div>
+          <div><dt>昭和53年</dt><dd>塗装工事をはじめる</dd></div>
+          <div><dt>昭和56年</dt><dd>総合防水工事・架設工事へ。建物の外壁仕上を一貫して担う体制に</dd></div>
+          <div><dt>昭和62年</dt><dd>ALC工事にも進出</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 大切にしていること -->
+<section class="band" id="values">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">大切にしていること</p>
+      <h2>任せてよかった、と<br>思っていただくために。</h2>
+    </div>
+    <div class="values">
+      <div class="value">
+        <div class="mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div>
+        <h3>親切で丁寧な仕事</h3>
+        <p>お住まいも建物も、お客様の大切な財産です。社員一同その自覚をもって、ご相談から仕上げまで丁寧に向き合います。</p>
+      </div>
+      <div class="value">
+        <div class="mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div>
+        <h3>一貫した責任施工</h3>
+        <p>吹付・塗装・防水・シーリングまで自社で手がけてきたので、外まわりの工事をまとめてお任せいただけます。</p>
+      </div>
+      <div class="value">
+        <div class="mark" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15 15.5c.6-.3 1.3-.5 2-.5 2.5 0 4 1.8 4 4.5"/></svg></div>
+        <h3>職人さんを大切に</h3>
+        <p>毎月の施工者会議で、品質や安全について職人さんと話し合っています。良い仕事をした職人さんを表彰する褒章制度もあります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 職人さん -->
+<section class="dark" id="crew">
+  <div class="wrap">
+    <div class="crew">
+      <div class="text">
+        <div class="sec-head" style="margin-bottom:8px">
+          <p class="eyebrow">職人さんたち</p>
+          <h2>腕のいい職人さんが、<br>笑顔で現場に立っています。</h2>
+        </div>
+        <p>昭研工業には、優れた技術や意欲、段取りの良さで活躍した職人さんを表彰する<strong>褒章制度</strong>があります。毎月ひらく施工者会議の場で受賞者を発表し、代表から記念品を手渡しています。</p>
+        <p>これまでに開いた褒章式は<strong>35回</strong>。2022年からは、一年間でもっとも活躍した職人さんを選ぶ<strong>年間MVP</strong>も始まりました。女性の職人さんも活躍しています。</p>
+        <p>お客様のお宅に伺うのは、この職人さんたちです。顔の見える会社として、安心してお任せいただけるよう取り組んでいます。</p>
+      </div>
+      <div class="gallery">
+        <figure class="wide"><img src="https://shouken-kougyou.com/files/libs/16/20211001085224697.jpg" alt="褒章を受けて笑顔の職人さん"><figcaption>褒章式のひとこま</figcaption></figure>
+        <figure><img src="https://shouken-kougyou.com/files/libs/189/202304281000132845.jpg" alt="施工者会議での記念撮影"><figcaption>女性の職人さんも活躍中</figcaption></figure>
+        <figure><img src="https://shouken-kougyou.com/files/libs/15/202110010852234245.jpg" alt="施工者会議での記念撮影"><figcaption>毎月の施工者会議にて</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- できること -->
+<section class="band" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">工事の内容</p>
+      <h2>建物の外まわりのことなら、<br>何でもご相談ください。</h2>
+      <p>一戸建てのお住まいから、マンション・アパート、公共の建物まで対応しています。</p>
+    </div>
+    <div class="services">
+      <div class="svc"><h3>外壁塗装</h3><p>戸建て・マンション・店舗の外壁の塗り替え</p></div>
+      <div class="svc"><h3>屋根塗装・屋根工事</h3><p>屋根の塗り替え、シングル屋根などの葺き替え</p></div>
+      <div class="svc"><h3>雨漏り修理</h3><p>雨漏りの原因を調べて、適した方法で直します</p></div>
+      <div class="svc"><h3>防水工事</h3><p>屋上・ベランダ・廊下などの防水</p></div>
+      <div class="svc"><h3>遮熱塗装</h3><p>夏の日差しの熱をおさえる塗装</p></div>
+      <div class="svc"><h3>マンション大規模修繕</h3><p>分譲・賃貸マンションの計画的な改修</p></div>
+      <div class="svc"><h3>タイル工事</h3><p>外壁・床・外構のタイルの改修</p></div>
+      <div class="svc"><h3>床・階段の防音施工</h3><p>共用廊下や階段の防水・防音</p></div>
+      <div class="svc"><h3>シーリング・サイディング</h3><p>目地の打ち替えや外壁材の工事</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 施工事例 -->
+<section id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">施工事例</p>
+      <h2>手がけてきた工事を、<br>施工前と施工後でご覧ください。</h2>
+      <p>掲載しているのは34件。民間のマンションから、学校・保育園・公会堂などの公共の建物、戸建てのお住まいまで手がけています。</p>
+    </div>
+    <div class="wtabs" role="tablist" aria-label="施工事例の種類">
+<button type="button" class="wtab" role="tab" id="tab-mansion" aria-selected="true" data-cat="mansion">マンション・ビル<span>8</span></button>
+<button type="button" class="wtab" role="tab" id="tab-public" aria-selected="false" data-cat="public">公共の建物<span>5</span></button>
+<button type="button" class="wtab" role="tab" id="tab-house" aria-selected="false" data-cat="house">戸建て住宅<span>7</span></button>
+<button type="button" class="wtab" role="tab" id="tab-water" aria-selected="false" data-cat="water">防水工事<span>7</span></button>
+<button type="button" class="wtab" role="tab" id="tab-other" aria-selected="false" data-cat="other">プール・駐車場など<span>4</span></button>
+<button type="button" class="wtab" role="tab" id="tab-roof" aria-selected="false" data-cat="roof">屋根・タイル<span>3</span></button>
+    </div>
+    <div class="wgrid" id="wgrid">
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/93/202110010853495928.JPG" alt="賃貸マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/94/202110010853508928.JPG" alt="賃貸マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>賃貸マンション</h3><dl><dt>場所</dt><dd>東京都中野区</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>外壁塗り替え・屋上などの防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/105/202110010854036401.JPG" alt="分譲マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/106/202110010854043039.JPG" alt="分譲マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>分譲マンション</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>管理組合様</dd><dt>内容</dt><dd>外壁塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/95/202110010853519017.jpg" alt="宿泊施設の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/96/202110010853522334.JPG" alt="宿泊施設の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>宿泊施設</h3><dl><dt>場所</dt><dd>東京都八王子市</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁などの塗装工事</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/97/202110010853534852.JPG" alt="北里大学 M5号棟の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/98/202110010853554934.JPG" alt="北里大学 M5号棟の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>北里大学 M5号棟</h3><dl><dt>場所</dt><dd>神奈川県相模原市</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁などの塗装工事</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/99/202110010853562518.JPG" alt="分譲マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/100/202110010853579917.JPG" alt="分譲マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>分譲マンション</h3><dl><dt>場所</dt><dd>神奈川県川崎市多摩区</dd><dt>ご依頼</dt><dd>管理組合様</dd><dt>内容</dt><dd>外壁タイル張り替え・屋上防水</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/101/20211001085359898.JPG" alt="賃貸マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/102/202110010854002447.JPG" alt="賃貸マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>賃貸マンション</h3><dl><dt>場所</dt><dd>東京都狛江市</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>外壁タイルなどの張り替え・屋上、廊下の防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/103/202110010854019469.JPG" alt="賃貸マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/104/202110010854025777.JPG" alt="賃貸マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>賃貸マンション</h3><dl><dt>場所</dt><dd>神奈川県川崎市麻生区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁タイル張り替え・屋上、廊下の防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="mansion">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/107/202110010854068556.JPG" alt="賃貸マンションの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/108/202110010854078625.JPG" alt="賃貸マンションの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>賃貸マンション</h3><dl><dt>場所</dt><dd>東京都世田谷区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁タイルなどの張り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="public">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/119/202110010854201392.JPG" alt="武蔵野市公会堂の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/120/202110010854215126.jpg" alt="武蔵野市公会堂の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市公会堂</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>外壁などの塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="public">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/117/202110010854186806.jpg" alt="武蔵野市消防団 第一分団の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/118/20211001085419267.jpg" alt="武蔵野市消防団 第一分団の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市消防団 第一分団</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>外壁などの塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="public">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/111/202110010854116104.JPG" alt="公社の賃貸住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/112/202110010854129880.JPG" alt="公社の賃貸住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>公社の賃貸住宅</h3><dl><dt>場所</dt><dd>東京都昭島市</dd><dt>ご依頼</dt><dd>東京都住宅供給公社</dd><dt>内容</dt><dd>外壁塗り替え・屋上防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="public">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/113/202110010854138043.JPG" alt="公社の賃貸住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/114/202110010854141081.JPG" alt="公社の賃貸住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>公社の賃貸住宅</h3><dl><dt>場所</dt><dd>東京都町田市</dd><dt>ご依頼</dt><dd>東京都住宅供給公社</dd><dt>内容</dt><dd>外壁などの塗り替え・屋上防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="public">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/115/202110010854167349.JPG" alt="公社の賃貸住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/116/202110010854176155.JPG" alt="公社の賃貸住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>公社の賃貸住宅</h3><dl><dt>場所</dt><dd>東京都府中市</dd><dt>ご依頼</dt><dd>東京都住宅供給公社</dd><dt>内容</dt><dd>外壁などの塗り替え・屋上防水工事</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/121/202110010854232646.JPG" alt="別荘の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/122/20211001085424294.jpg" alt="別荘の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>別荘</h3><dl><dt>場所</dt><dd>静岡県伊東市</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>外壁などの塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/123/202110010854256587.JPG" alt="戸建て住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/124/202110010854268574.JPG" alt="戸建て住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>戸建て住宅</h3><dl><dt>場所</dt><dd>神奈川県川崎市麻生区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁・屋根の塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/125/202110010854279221.JPG" alt="戸建て住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/126/202110010854295604.JPG" alt="戸建て住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>戸建て住宅</h3><dl><dt>場所</dt><dd>神奈川県川崎市麻生区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁・屋根の塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/127/20211001085430909.JPG" alt="戸建て住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/128/202110010854314074.JPG" alt="戸建て住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>戸建て住宅</h3><dl><dt>場所</dt><dd>神奈川県川崎市麻生区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁・屋根の塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/129/20211001085432538.JPG" alt="戸建て住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/130/202110010854343426.JPG" alt="戸建て住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>戸建て住宅</h3><dl><dt>場所</dt><dd>神奈川県川崎市麻生区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>外壁・屋根の塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/131/202110010854353991.JPG" alt="店舗併用住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/132/202110010854361436.JPG" alt="店舗併用住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>店舗併用住宅</h3><dl><dt>場所</dt><dd>東京都東村山市</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>外壁などの塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="house">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/109/202110010854081324.JPG" alt="木造2階建ての賃貸アパートの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/110/20211001085409786.JPG" alt="木造2階建ての賃貸アパートの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>木造2階建ての賃貸アパート</h3><dl><dt>場所</dt><dd>東京都東村山市</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>外壁などの塗り替え</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/18/202110010852266983.JPG" alt="国分寺市立第九小学校の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/19/202110010852275557.JPG" alt="国分寺市立第九小学校の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>国分寺市立第九小学校</h3><dl><dt>場所</dt><dd>東京都国分寺市</dd><dt>ご依頼</dt><dd>国分寺市</dd><dt>内容</dt><dd>ウレタン塗膜防水(機械固定工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/67/202110010853185917.JPG" alt="武蔵野市立第四小学校の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/68/20211001085319184.JPG" alt="武蔵野市立第四小学校の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市立第四小学校</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>ウレタン塗膜防水(通気緩衝工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/20/202110010852295580.JPG" alt="府中市立是政文化センターの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/21/202110010852302244.JPG" alt="府中市立是政文化センターの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>府中市立是政文化センター</h3><dl><dt>場所</dt><dd>東京都府中市</dd><dt>ご依頼</dt><dd>府中市</dd><dt>内容</dt><dd>ウレタン塗膜防水(通気緩衝工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/24/202110010852333253.JPG" alt="府中市営 矢崎町南住宅の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/25/202110010852356535.JPG" alt="府中市営 矢崎町南住宅の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>府中市営 矢崎町南住宅</h3><dl><dt>場所</dt><dd>東京都府中市</dd><dt>ご依頼</dt><dd>府中市</dd><dt>内容</dt><dd>ウレタン塗膜防水(通気緩衝工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/28/202110010852384014.JPG" alt="武蔵野市立桜堤保育園の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/29/202110010852396541.JPG" alt="武蔵野市立桜堤保育園の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市立桜堤保育園</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>ウレタン塗膜防水(通気緩衝工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/34/202110010852452857.JPG" alt="北町調理場の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/35/202110010852465897.JPG" alt="北町調理場の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>北町調理場</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>ウレタン塗膜防水(通気緩衝工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="water">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/69/202110010853205066.JPG" alt="東京工業高等専門学校の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/70/202110010853215964.JPG" alt="東京工業高等専門学校の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>東京工業高等専門学校</h3><dl><dt>内容</dt><dd>塩ビ系シート防水(機械固定工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="other">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/167/202110010855179019.JPG" alt="武蔵野市立第三小学校のプールの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/168/202110010855189683.JPG" alt="武蔵野市立第三小学校のプールの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市立第三小学校のプール</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>既存の塗膜を撤去し、プール専用塗料を塗布</dd></dl>
+</article>
+<article class="wcard" data-cat="other">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/169/202110010855197161.jpg" alt="武蔵野市立本宿小学校のプールサイドの施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/170/202110010855209918.jpg" alt="武蔵野市立本宿小学校のプールサイドの施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>武蔵野市立本宿小学校のプールサイド</h3><dl><dt>場所</dt><dd>東京都武蔵野市</dd><dt>ご依頼</dt><dd>武蔵野市</dd><dt>内容</dt><dd>塩ビシート防水(機械固定工法)</dd></dl>
+</article>
+<article class="wcard" data-cat="other">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/165/202110010855143185.JPG" alt="可動式の立体駐車場の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/166/202110010855151392.JPG" alt="可動式の立体駐車場の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>可動式の立体駐車場</h3><dl><dt>場所</dt><dd>東京都八王子市</dd><dt>ご依頼</dt><dd>オーナー様</dd><dt>内容</dt><dd>ケレン・防錆処理のうえ上塗り2回</dd></dl>
+</article>
+<article class="wcard" data-cat="other">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/171/202110010855217507.JPG" alt="ゴミ置場のコンクリート壁の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/172/202110010855223715.JPG" alt="ゴミ置場のコンクリート壁の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>ゴミ置場のコンクリート壁</h3><dl><dt>内容</dt><dd>打放しコンクリートの肌合わせ、クリアー塗布</dd></dl>
+</article>
+<article class="wcard" data-cat="roof">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/173/202110010855246922.JPG" alt="教会の屋根の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/174/202110010855255210.JPG" alt="教会の屋根の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>教会の屋根</h3><dl><dt>場所</dt><dd>神奈川県横浜市青葉区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>シングル屋根の葺き替え(アスファルトシングル防水)</dd></dl>
+</article>
+<article class="wcard" data-cat="roof">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/175/202110010855268312.JPG" alt="医療テナントビルの屋根の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/176/202110010855275006.JPG" alt="医療テナントビルの屋根の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>医療テナントビルの屋根</h3><dl><dt>場所</dt><dd>神奈川県川崎市</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>アスファルトシングル防水</dd></dl>
+</article>
+<article class="wcard" data-cat="roof">
+  <div class="ba"><figure><img src="https://shouken-kougyou.com/files/libs/181/202110010855341210.JPG" alt="教会のフラワーボックス(タイル)の施工前" loading="lazy"><span>施工前</span></figure><figure class="after"><img src="https://shouken-kougyou.com/files/libs/182/202110010855359912.JPG" alt="教会のフラワーボックス(タイル)の施工後" loading="lazy"><span>施工後</span></figure></div>
+  <h3>教会のフラワーボックス(タイル)</h3><dl><dt>場所</dt><dd>神奈川県横浜市青葉区</dd><dt>ご依頼</dt><dd>地元工務店</dd><dt>内容</dt><dd>高圧水洗浄</dd></dl>
+</article>
+    </div>
+  </div>
+</section>
+
+<!-- 公共工事と資格 -->
+<section class="band" id="trust">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">地域からの信頼</p>
+      <h2>武蔵野市や東京都の<br>公共工事もお任せいただいています。</h2>
+    </div>
+    <div class="public">
+      <div class="pub"><small>武蔵野市 発注</small><b>公会堂・消防団の建物</b><span>武蔵野市公会堂、武蔵野市消防団 第一分団の外壁塗り替え</span></div>
+      <div class="pub"><small>武蔵野市・国分寺市 発注</small><b>小学校・保育園</b><span>武蔵野市立第三・第四・本宿小学校、桜堤保育園、国分寺市立第九小学校の防水・プール改修</span></div>
+      <div class="pub"><small>府中市・東京都住宅供給公社 発注</small><b>文化センター・公営住宅</b><span>府中市立是政文化センター、府中市営住宅、昭島市・町田市・府中市の公社住宅</span></div>
+    </div>
+    <div class="quals" aria-label="資格をもつスタッフ">
+      <div class="qual"><span>2級建築施工管理技士(仕上)</span><b>5<small>名</small></b></div>
+      <div class="qual"><span>1級塗装技能士</span><b>3<small>名</small></b></div>
+      <div class="qual"><span>外壁仕上1級技能者</span><b>3<small>名</small></b></div>
+      <div class="qual"><span>マスチック性能仕上・管理士</span><b>5<small>名</small></b></div>
+      <div class="qual"><span>有機溶剤作業主任者</span><b>8<small>名</small></b></div>
+      <div class="qual"><span>足場組立等作業主任者</span><b>6<small>名</small></b></div>
+      <div class="qual"><span>塗装診断士</span><b>2<small>名</small></b></div>
+      <div class="qual"><span>国土交通大臣許可</span><b style="font-size:18px">(般-2) 第13839号</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 流れ -->
+<section id="flow">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">ご相談の流れ</p>
+      <h2>お電話一本から、<br>お気軽にどうぞ。</h2>
+    </div>
+    <div class="flow">
+      <div class="step"><h3>ご相談</h3><p>お電話かフォームで、気になっていることをお聞かせください。</p></div>
+      <div class="step"><h3>訪問して拝見</h3><p>お宅や建物に伺い、外壁や屋根の状態を見せていただきます。</p></div>
+      <div class="step"><h3>お見積り</h3><p>工事の内容と費用をご説明します。ご納得いただいてからのご依頼で大丈夫です。</p></div>
+      <div class="step"><h3>施工・お引き渡し</h3><p>職人さんが責任をもって施工し、仕上がりをご確認いただきます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- お知らせ -->
+<section class="band" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">お知らせ</p>
+      <h2>昭研工業からのお知らせ</h2>
+    </div>
+    <ul class="news">
+      <li><time datetime="2023-04-17">2023年4月17日</time><span>第35回 褒章式の受賞者を発表しました</span></li>
+      <li><time datetime="2022-12-15">2022年12月15日</time><span>第34回 褒章式と、2022年の年間MVP受賞者を発表しました</span></li>
+      <li><time datetime="2022-07-15">2022年7月15日</time><span>第33回 褒章式の受賞者を発表しました</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 会社案内 -->
+<section id="company">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">会社案内</p>
+      <h2>会社概要</h2>
+    </div>
+    <div class="company">
+      <dl class="co-table">
+        <div><dt>会社名</dt><dd>昭研工業株式会社</dd></div>
+        <div><dt>代表者</dt><dd>代表取締役 金子 由徳</dd></div>
+        <div><dt>設立</dt><dd>1974年(昭和49年)8月1日</dd></div>
+        <div><dt>資本金</dt><dd>3,000万円</dd></div>
+        <div><dt>従業員数</dt><dd>正社員 27名／パート・アルバイト 26名</dd></div>
+        <div><dt>本社</dt><dd>〒180-0023 東京都武蔵野市境南町2-4-15<br>TEL 0422-32-5821　FAX 0422-32-5803</dd></div>
+        <div><dt>小平支店</dt><dd>〒187-0013 東京都小平市回田町217-2</dd></div>
+        <div><dt>小平ショップ</dt><dd>〒187-0042 東京都小平市仲町127-2</dd></div>
+        <div><dt>営業品目</dt><dd>建築綜合吹付工事、綜合塗装工事、建築綜合防水工事、シーリング工事、発泡ウレタン工事、耐火被覆工事、サイディング工事、マンション大規模修繕工事</dd></div>
+        <div><dt>許可</dt><dd>国土交通大臣 許可(般-2) 第13839号</dd></div>
+        <div><dt>加盟団体</dt><dd>東京都塗装工業協同組合、東日本外壁仕上業協同組合、関東マスチック事業協同組合、サラセーヌ工業会、リフリート工業会</dd></div>
+        <div><dt>取引銀行</dt><dd>多摩信用金庫、三井住友銀行、みずほ銀行、三菱UFJ銀行</dd></div>
+      </dl>
+      <div class="bldg">
+        <img src="https://shouken-kougyou.com/files/libs/228/202310241427431881.jpg" alt="昭研工業の社屋">
+        <a href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AD%A6%E8%94%B5%E9%87%8E%E5%B8%82%E5%A2%83%E5%8D%97%E7%94%BA2-4-15" target="_blank" rel="noopener">本社の地図をGoogleマップで見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">お問い合わせ</p>
+      <h2>工事のことなら、<br>何でもお気軽にご相談ください。</h2>
+      <p>「この汚れは塗り替えたほうがいい？」「雨漏りかもしれない」といった小さなことでも大丈夫です。訪問してのお見積りにも伺います。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="tel-card">
+        <p>お電話でのご相談</p>
+        <p class="num">0422-32-5821</p>
+        <p class="fax">FAX 0422-32-5803</p>
+        <p class="note">本社:東京都武蔵野市境南町2-4-15<br>武蔵野市・小平市を中心に対応しています。</p>
+      </div>
+      <form class="f" id="contact-form" novalidate>
+        <label for="f-name">お名前<span class="req">必須</span><input id="f-name" name="name" type="text" autocomplete="name" required></label>
+        <label for="f-tel">お電話番号<span class="req">必須</span><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <label for="f-msg">ご相談内容<small>わかる範囲で大丈夫です</small><textarea id="f-msg" name="message" placeholder="例:築20年の戸建てです。外壁の色あせが気になっています。"></textarea></label>
+        <button class="btn btn-sun" type="submit">この内容で相談する</button>
+        <p class="f-done" id="f-done" hidden>こちらはご提案用の見本ページのため、送信はされません。実際の公開時には、ご相談がそのまま届くフォームにいたします。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>昭研工業株式会社</b><br>〒180-0023 東京都武蔵野市境南町2-4-15<br>TEL 0422-32-5821　FAX 0422-32-5803</div>
+    <div>Copyright &copy; 昭研工業株式会社 All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="fixed-tel">
+  <a class="btn btn-line" href="tel:0422325821">電話で相談</a>
+  <a class="btn btn-sun" href="#contact">フォームで相談</a>
+</div>
+
+<script>
+
+(function(){
+  var tabs=document.querySelectorAll('.wtab'), cards=document.querySelectorAll('.wcard');
+  function show(cat){
+    tabs.forEach(function(t){t.setAttribute('aria-selected', t.dataset.cat===cat ? 'true':'false');});
+    cards.forEach(function(c){c.hidden = c.dataset.cat!==cat;});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.cat);});});
+  show(tabs[0].dataset.cat);
+})();
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('f-done').hidden = false;
+});
+</script>
+</body>
+</html>
